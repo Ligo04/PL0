@@ -75,15 +75,6 @@ namespace PL0
 				// ±£¡Ù
 				eInfo.dataStack[eInfo.tr] = !eInfo.dataStack[eInfo.tr];
 			}
-			// ’ª∂•:= ’ª∂• + 1
-			else if (eInfo.ir.mix == Opr_SAD)
-			{
-				++eInfo.dataStack[eInfo.tr];
-			}
-			else if (eInfo.ir.mix == Opr_SSU)
-			{
-				--eInfo.dataStack[eInfo.tr];
-			}
 			// ¥Œ’ª∂• := ¥Œ’ª∂• + ’ª∂•£¨tºı1
 			else if (eInfo.ir.mix == Opr_ADD)
 			{

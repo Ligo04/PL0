@@ -139,10 +139,6 @@ namespace PL0
 			case Opr_RET: mix = "RET"; break;
 			case Opr_NEG: mix = "NEG"; break;
 			case Opr_NOT: mix = "NOT"; break;
-
-			case Opr_SAD: mix = "SAD"; break;
-			case Opr_SSU: mix = "SSU"; break;
-
 			case Opr_ADD: mix = "ADD"; break;
 			case Opr_SUB: mix = "SUB"; break;
 			case Opr_MUL: mix = "MUL"; break;

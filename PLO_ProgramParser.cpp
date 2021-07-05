@@ -427,7 +427,7 @@ namespace PL0
                     SafeCheck(ST_Error, 34);                    // [Error034] Identifier redefined
                 }
 
-                // ***添加过程符号***
+                // ***添加过程参数符号***
                 id = { "",ID_PARAMETER | ID_VAR,0,m_CurrLevel,0 };
                 strcpy_s(id.name, m_pCurrSymbol->word.c_str());
                 switch (valueType)
@@ -517,7 +517,7 @@ namespace PL0
                 ParseComplexStat();
             }
             // <赋值语句>
-            else if (m_pCurrSymbol->symbolType == ST_Identifier)
+            else if (m_pCurrSymbol->symbolType == ST_Identifier || m_pCurrSymbol->symbolType == ST_SelfAdd || m_pCurrSymbol->symbolType == ST_SelfSub)
             {
                 ParseAssignStat();
             }

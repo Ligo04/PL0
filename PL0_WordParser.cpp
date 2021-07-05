@@ -415,7 +415,7 @@ namespace PL0
                 IgnoreNextChar();
                 symbol.symbolType = ST_MinusAndAssign;
             }
-            //符号类型是自增++
+            //符号类型是自增--
             else if (ch == '-')
             {
                 IgnoreNextChar();
