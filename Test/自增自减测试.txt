@@ -1,0 +1,19 @@
+int a,b,c;
+begin
+    a:=2;
+    c:=3;
+    --c;
+    a++;
+    b:= a++ +2 + --c;                  
+    write(a);  
+    write(b); 
+    write(c);
+end.
+
+
+int a,b;
+begin
+    a:=2;
+    --a;
+    write(a);  
+end.
